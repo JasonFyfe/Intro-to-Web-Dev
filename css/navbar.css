@@ -1,0 +1,72 @@
+@media only screen and (max-width: 420px)
+{
+    .nav-item
+    {
+        width: 25%;
+        height: 100%;
+        text-align: center;
+        line-height: 55px;
+        background: rgb(176, 255, 255);
+        color: #000;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .active
+    {
+        background: rgb(0, 255, 255);
+    }
+
+    .nav-item:hover
+    {
+        background: rgb(61, 233, 233);
+    }
+
+    .nav-left
+    {
+        float: left;
+    }
+
+    .nav-right
+    {
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 420px)
+{
+    .nav-item
+    {
+        width: 6.25em;
+        height: 100%;
+        text-align: center;
+        line-height: 55px;
+        background: rgb(176, 255, 255);
+        color: #000;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .active
+    {
+        background: rgb(0, 255, 255);
+    }
+
+    .nav-item:hover
+    {
+        background: rgb(61, 233, 233);
+    }
+
+    .nav-left
+    {
+        float: left;
+    }
+
+    .nav-right
+    {
+        float: right;
+    }
+}
+

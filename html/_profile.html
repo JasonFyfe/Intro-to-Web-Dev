@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ?ts=<?=time()?> added to the end of CSS to ensure up-to-date versions are used -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../css/grid_layout.css?ts=<?=time()?>">
+    <link rel="stylesheet" href="../css/navbar.css?ts=<?=time()?>">
+    <title>Home</title>
+</head>
+
+<body>
+    <header class="header-home">
+        <div>
+            <h1>Profile</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="_home.html" class="nav-item nav-left active">Home</a>
+        <a href="_blog.html" class="nav-item nav-left">Blog</a>
+        <a href="_contact.html" class="nav-item nav-left">Contact</a>
+        <a href="" class="nav-item nav-right">Profile</a>
+    </nav>
+    <div class="gutter-left"></div>
+    <section>
+        <form action="" name="profile_form">
+            <h2>Change Password</h2>
+            <input type="password" placeholder="current password" name="oldPass"><br>
+            <input type="password" placeholder="new password" name="newPass"><br>
+            <input type="password" placeholder="confirm password" name="confirmPass"><br>
+            <button onclick="changePass(event.preventDefault())">Change Password</button o>
+        </form>
+
+        <form action="" name="email_form">
+            <h2>Change email</h2>
+            <input type="email" placeholder="current@email.com" name="currentEmail"><br>
+            <input type="email" placeholder="new@email.com" name="newEmail"><br>
+            <button onclick="changeEmail(event.preventDefault())">Change Email</button><br>
+
+            <h2>Log Out</h2>
+            <button onclick="logout(event.preventDefault())">Log Out</button>
+
+            <h2>Delete Account</h2>
+            <button onclick="deleteAccount(event.preventDefault())">Delete Account</button>
+        </form>
+        
+        
+    </section>
+    <div class="gutter-right"></div>
+    <footer>The Local Theater - Made by Jason Fyfe</footer>
+    <script src="../js/logged.js"></script>
+    <script src="../js/profile.js"></script>
+</body>
+
+</html>

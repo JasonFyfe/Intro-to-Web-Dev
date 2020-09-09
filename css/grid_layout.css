@@ -1,0 +1,99 @@
+/* Page Layout Styling */
+html, body
+{
+    margin:0;
+}
+
+body
+{
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "gutter-left section gutter-right"
+        "footer footer footer";
+    grid-template-rows: 5em 3.75em 1fr 3.125em;
+    grid-template-columns: 10% 1fr 13%;
+    min-height: 100vh;
+    max-width: 100vw;
+}
+  
+header
+{
+    grid-area: header;
+    background: #C9BFBF;
+}
+
+header div
+{
+    display: inline-block;
+    width: 35%;
+    height: 100%;
+    background-color: rgba(85, 85, 85, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.header-home
+{
+    background-image: url(https://images.unsplash.com/photo-1576786592674-7b828f73fb9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40%;
+}
+
+.header-blog
+{
+    background-image: url(https://images.unsplash.com/photo-1541592553160-82008b127ccb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40%;
+}
+
+.header-contact
+{
+    background-image: url(https://images.unsplash.com/photo-1498230870289-7561110a6e69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40%;
+}
+
+h1
+{
+    font-size: 3.5em;
+    margin: 0;
+    margin-left: .5em;
+    color: #fff;
+}
+  
+nav
+{
+    grid-area: nav;
+    top: 0;
+    position: sticky;
+    background: #707070;
+}
+
+.gutter-left, .gutter-right
+{
+    background: rgb(228, 228, 228);
+}
+  
+section
+{
+    grid-area: section;
+    background: rgb(248, 243, 231);
+    text-align: center;
+}
+  
+footer
+{
+    grid-area: footer;
+    background: #C9BFBF;
+    text-align: center;
+    line-height: 2.5em;
+}
+  
+section, footer
+{
+    padding: 0.3125em;
+}
